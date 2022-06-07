@@ -1,8 +1,11 @@
 body {
     height: 100vh;
-    background-color: aquamarine;
     margin: 0 auto;
     padding-top: 100px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh
 }
 .main{
     width: 400px;
@@ -73,3 +76,21 @@ ul {
 .tot{
     font-size: 30px;
 }
+.name{
+    font-size: 5em;
+    font-weight: bold;
+    font-style: oblique;
+    color: darkslateblue;
+    width: 100%;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
